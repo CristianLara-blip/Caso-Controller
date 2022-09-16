@@ -21,14 +21,14 @@ public class ProductoDaqoImpl implements Operaciones<Producto> {
 	public int create(Producto t) {
 		// TODO Auto-generated method stub
 		String SQL = "INSERT INTO (nombre, precio, stock) VALUES(?,?,?)";
-		return jdbcTemplate.update(SQL, t.getNombre(), t.getPrecio(), t.getCantidad());
+		return jdbcTemplate.update(SQL, t.getNombre(), t.getPrecio(), t.getStock());
 	}
 
 	@Override
 	public int update(Producto t) {
 		// TODO Auto-generated method stub
 		String SQL = "INSERT INTO (nombre, precio, stock) VALUES(?,?,?)";
-		return jdbcTemplate.update(SQL, t.getNombre(), t.getPrecio(), t.getCantidad());
+		return jdbcTemplate.update(SQL, t.getNombre(), t.getPrecio(), t.getStock());
 	}
 
 	@Override
